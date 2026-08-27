@@ -1,0 +1,413 @@
+/* ============================================
+   RESET Y BASE (compartido)
+   ============================================ */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Roboto, Arial, sans-serif;
+    background: #f0f4f8;
+    color: #1e293b;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 20px;
+}
+
+/* ============================================
+   LANDING PAGE (index.html)
+   ============================================ */
+.landing {
+    max-width: 1100px;
+    width: 100%;
+    background: #ffffff;
+    border-radius: 32px;
+    box-shadow: 0 25px 70px rgba(0, 0, 0, 0.10);
+    padding: 50px 45px;
+    text-align: center;
+}
+
+.landing-header {
+    margin-bottom: 40px;
+}
+
+.landing-header h1 {
+    font-size: 42px;
+    font-weight: 700;
+    color: #0b2a4a;
+    letter-spacing: 1px;
+}
+
+.landing-header h1 span {
+    color: #2563eb;
+}
+
+.landing-header p {
+    font-size: 18px;
+    color: #475569;
+    margin-top: 8px;
+}
+
+.divider {
+    width: 80px;
+    height: 4px;
+    background: linear-gradient(90deg, #2563eb, #4ca1dd);
+    margin: 16px auto 0;
+    border-radius: 4px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 30px;
+    margin-top: 10px;
+}
+
+.card {
+    background: #f8fafc;
+    border-radius: 20px;
+    padding: 35px 25px 30px;
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.25s ease;
+    border: 2px solid transparent;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    border-color: #2563eb;
+    box-shadow: 0 16px 40px rgba(37, 99, 235, 0.10);
+    background: #ffffff;
+}
+
+.card-icon {
+    font-size: 48px;
+    display: block;
+    margin-bottom: 16px;
+}
+
+.card h3 {
+    font-size: 22px;
+    font-weight: 700;
+    color: #0b2a4a;
+    margin-bottom: 6px;
+}
+
+.card p {
+    font-size: 16px;
+    color: #64748b;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.card .tag {
+    display: inline-block;
+    margin-top: 14px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #2563eb;
+    background: rgba(37, 99, 235, 0.08);
+    padding: 4px 18px;
+    border-radius: 30px;
+}
+
+.landing-footer {
+    margin-top: 45px;
+    font-size: 15px;
+    color: #94a3b8;
+    border-top: 1px solid #e9edf2;
+    padding-top: 25px;
+}
+
+.landing-footer a {
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.landing-footer a:hover {
+    text-decoration: underline;
+}
+
+/* ============================================
+   HOJAS DE VIDA (administrativo, cloud, unificado)
+   ============================================ */
+.cv {
+    max-width: 1100px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 32% 68%;
+    background: #ffffff;
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.12);
+}
+
+.sidebar {
+    background: #0b2a4a;
+    color: #f0f9ff;
+    padding: 40px 28px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.photo {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto 20px;
+    border: 4px solid #4ca1dd;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.side-title {
+    font-size: 28px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    color: #ffffff;
+}
+
+.line {
+    height: 2px;
+    background: linear-gradient(90deg, #4ca1dd, transparent);
+    margin: 12px 0 20px 0;
+}
+
+.skill {
+    padding: 18px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.skill:last-child {
+    border-bottom: none;
+}
+
+.skill-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: rgba(76, 161, 221, 0.2);
+    border: 2px solid #4ca1dd;
+    font-size: 20px;
+    margin-right: 14px;
+    vertical-align: top;
+    flex-shrink: 0;
+}
+
+.skill-content {
+    display: inline-block;
+    width: calc(100% - 62px);
+    vertical-align: top;
+}
+
+.skill h3 {
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: #8fcbff;
+    margin: 0 0 6px 0;
+}
+
+.skill p {
+    font-size: 15px;
+    line-height: 1.6;
+    margin: 0;
+    color: #e2edf7;
+}
+
+.main {
+    padding: 40px 42px;
+    background: #ffffff;
+}
+
+.name {
+    font-size: 48px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #0b2a4a;
+    margin: 0;
+}
+
+.role {
+    font-size: 20px;
+    font-weight: 600;
+    color: #2563eb;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin: 6px 0 16px 0;
+}
+
+.topline {
+    border-top: 3px solid #2563eb;
+    width: 80px;
+    margin-bottom: 20px;
+}
+
+.contact {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px 32px;
+    padding: 14px 0 24px 0;
+    font-size: 16px;
+    color: #334155;
+    border-bottom: 1px solid #e9edf2;
+}
+
+.contact span {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.section {
+    margin-top: 32px;
+}
+
+.section-head {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 16px;
+}
+
+.section-icon {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: #0b2a4a;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    flex-shrink: 0;
+}
+
+h2 {
+    font-size: 22px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: #0b2a4a;
+    border-bottom: 2px solid #e9edf2;
+    padding-bottom: 8px;
+    margin: 0;
+    flex: 1;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.7;
+    color: #1e293b;
+    margin: 0 0 14px 0;
+}
+
+.company {
+    font-size: 20px;
+    font-weight: 700;
+    color: #0b2a4a;
+}
+
+.job {
+    font-size: 16px;
+    color: #475569;
+    margin: 4px 0 2px 0;
+}
+
+.edu {
+    margin-bottom: 16px;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.edu strong {
+    color: #0b2a4a;
+    font-size: 17px;
+}
+
+ul {
+    padding-left: 22px;
+    margin: 6px 0 0 0;
+}
+
+li {
+    font-size: 16px;
+    line-height: 1.7;
+    color: #1e293b;
+    margin-bottom: 4px;
+}
+
+/* ============================================
+   RESPONSIVE
+   ============================================ */
+@media (max-width: 800px) {
+    body {
+        padding: 16px;
+    }
+
+    .landing {
+        padding: 30px 20px;
+    }
+
+    .landing-header h1 {
+        font-size: 30px;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .card {
+        padding: 25px 20px;
+    }
+
+    .cv {
+        grid-template-columns: 1fr;
+        border-radius: 16px;
+    }
+
+    .sidebar {
+        padding: 30px 20px;
+    }
+
+    .photo {
+        width: 150px;
+        height: 150px;
+    }
+
+    .main {
+        padding: 28px 22px;
+    }
+
+    .name {
+        font-size: 36px;
+    }
+
+    .role {
+        font-size: 17px;
+    }
+
+    .contact {
+        flex-direction: column;
+        gap: 6px;
+    }
+}

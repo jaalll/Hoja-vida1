@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jesús Álvarez - Hojas de Vida</title>
+    <link rel="stylesheet" href="css/estilos.css" />
+</head>
+<body>
+    <div class="landing">
+        <!-- ENCABEZADO -->
+        <div class="landing-header">
+            <h1>👋 Hola, soy <span>Jesús Álvarez</span></h1>
+            <p>Profesional Junior en Cloud · Automatización · Gestión Administrativa</p>
+            <div class="divider"></div>
+        </div>
+
+        <!-- TARJETAS DE OPCIONES -->
+        <div class="cards">
+            <a href="administrativo.html" class="card">
+                <span class="card-icon">📋</span>
+                <h3>Administrativo</h3>
+                <p>Perfil orientado a gestión de información, procesos administrativos y organización documental.</p>
+                <span class="tag">Ver hoja de vida →</span>
+            </a>
+
+            <a href="cloud.html" class="card">
+                <span class="card-icon">☁️</span>
+                <h3>Cloud & Automatización</h3>
+                <p>Perfil enfocado en infraestructura cloud, automatización con Python y análisis de recursos en Azure.</p>
+                <span class="tag">Ver hoja de vida →</span>
+            </a>
+
+            <a href="unificado.html" class="card">
+                <span class="card-icon">🔗</span>
+                <h3>Unificado</h3>
+                <p>Versión combinada que integra lo mejor de ambos perfiles: gestión + tecnología.</p>
+                <span class="tag">Ver hoja de vida →</span>
+            </a>
+        </div>
+
+        <!-- PIE -->
+        <div class="landing-footer">
+            📧 <a <span>✉ <span class= "email-text">cargando correo...</span></a>
+            &nbsp;·&nbsp; 📞 302 650 9947
+            &nbsp;·&nbsp; 📍 Bogotá D.C., Colombia
+        </div>
+    </div>
+    <script>
+        (function() {
+            const user = "jesusalvarezll0708";
+            const domain = "gmail.com";
+            const email = user + "@" + domain;
+
+            document.querySelectorAll('.email-link').forEach(function(el) {
+                el.textContent = email;
+                el.href = "mailto:" + email;
+            });
+
+            document.querySelectorAll('.email-text').forEach(function(el) {
+                el.textContent = email;
+            });
+        })();
+    </script>
+</body>
+</html>
