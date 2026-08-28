@@ -356,6 +356,18 @@ li {
 }
 
 /* ============================================
+   UNIFICADO: distribución de la barra lateral
+   ============================================ */
+.cv-unificado .sidebar {
+    justify-content: space-evenly;
+}
+
+.cv-unificado .skill-icon {
+    background: rgba(76, 161, 221, 0.32);
+    box-shadow: 0 0 0 4px rgba(76, 161, 221, 0.12);
+}
+
+/* ============================================
    RESPONSIVE
    ============================================ */
 @media (max-width: 800px) {

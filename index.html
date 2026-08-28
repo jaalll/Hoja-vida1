@@ -41,26 +41,11 @@
 
         <!-- PIE -->
         <div class="landing-footer">
-            📧 <a <span>✉ <span class= "email-text">cargando correo...</span></a>
+            ✉ <a class="email-link">cargando correo...</a>
             &nbsp;·&nbsp; 📞 302 650 9947
             &nbsp;·&nbsp; 📍 Bogotá D.C., Colombia
         </div>
     </div>
-    <script>
-        (function() {
-            const user = "jesusalvarezll0708";
-            const domain = "gmail.com";
-            const email = user + "@" + domain;
-
-            document.querySelectorAll('.email-link').forEach(function(el) {
-                el.textContent = email;
-                el.href = "mailto:" + email;
-            });
-
-            document.querySelectorAll('.email-text').forEach(function(el) {
-                el.textContent = email;
-            });
-        })();
-    </script>
+    <script src="js/email.js" defer></script>
 </body>
 </html>
