@@ -424,3 +424,41 @@ li {
         gap: 6px;
     }
 }
+
+/* ============================================
+   IMPRESIÓN / PDF: mantener layout de 2 columnas
+   ============================================ */
+@page {
+    size: A4;
+    margin: 0;
+}
+
+@media print {
+    body {
+        padding: 0;
+        background: #ffffff;
+        min-height: auto;
+        display: block;
+    }
+
+    .cv {
+        width: 100%;
+        max-width: none;
+        grid-template-columns: 32% 68%;
+        border-radius: 0;
+        box-shadow: none;
+        min-height: 100vh;
+    }
+
+    .sidebar {
+        background: #0b2a4a;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+
+    .sidebar, .main, .photo, .skill-icon, .section-icon,
+    .skill h3, .side-title, .name, .role {
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+}
