@@ -6,13 +6,16 @@
     <title>Jesús Álvarez - Hojas de Vida</title>
     <link rel="stylesheet" href="css/estilos.css" />
 </head>
-<body>
-    <div class="landing">
-        <!-- ENCABEZADO -->
-        <div class="landing-header">
-            <h1>👋 Hola, soy <span>Jesús Álvarez</span></h1>
-            <p>Profesional Junior en Cloud · Automatización · Gestión Administrativa</p>
+<body class="home-body">
+    <!-- FLECHA VOLVER ATRÁS -->
+    <a href="javascript:history.back()" class="back-btn" aria-label="Volver atrás">←</a>
+
+    <section class="hero">
+        <div class="hero-content">
+            <p class="hero-kicker">Profesional Junior en Cloud · Automatización · Gestión Administrativa</p>
+            <h1 class="hero-title">Jesús <span>Álvarez</span></h1>
             <div class="divider"></div>
+            <p class="hero-subtitle">Selecciona la versión de mi hoja de vida</p>
         </div>
 
         <!-- TARJETAS DE OPCIONES -->
@@ -38,14 +41,8 @@
                 <span class="tag">Ver hoja de vida →</span>
             </a>
         </div>
+    </section>
 
-        <!-- PIE -->
-        <div class="landing-footer">
-            ✉ <a class="email-link">cargando correo...</a>
-            &nbsp;·&nbsp; 📞 302 650 9947
-            &nbsp;·&nbsp; 📍 Bogotá D.C., Colombia
-        </div>
-    </div>
     <script src="js/email.js" defer></script>
 </body>
 </html>
